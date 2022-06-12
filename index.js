@@ -12,10 +12,10 @@ const tutorials = [
 ];
 
  titleCased=()=>{
-  return tutorials.map((newLine)=>{
-    let newLineTwo=newLine.split(" ");
-    let capitalized=newLineTwo.map((line)=>line.charAt(0).toUpperCase() + line.slice(1));
-    let last=capitalized.join(" ");
+  return tutorials.map((array)=>{
+    let newLine=array.split(" ");
+    let result=newLine.map((line)=>line.charAt(0).toUpperCase() + line.slice(1));
+    let last=result.join(" ");
     return last;
   });
 };
